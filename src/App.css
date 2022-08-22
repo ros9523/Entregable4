@@ -1,0 +1,153 @@
+*{
+    box-sizing: border-box;
+}
+
+
+body{
+    margin: 0;
+    background-color:lightgrey
+}
+
+
+
+.App__Elements{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  
+}
+
+.card-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 18px;
+    margin: 10px;
+    justify-content: center;
+    padding: 2px; 
+
+}
+
+
+.card-container__user{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 10px;
+    border: 2px solid;
+    width: 250px;
+    height: 300px;
+    text-align: center;
+    padding: 2px;
+    word-wrap: break-word;
+    transition: transform 400ms ease; 
+    background-color: silver;
+}
+
+.card-container__user:hover{
+   transform:scale(1.05);
+   transition: transform 400ms ease;
+}
+
+
+.card-container-buttons{
+    align-self: flex-end;
+}
+
+.form{
+    width: max-content;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 600;
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    gap: 3px;
+    align-items: center;
+    border: 1px solid;
+    background-color: white;
+    margin: auto;
+    padding: 2px;
+    background-color: grey;
+    border-radius: 20px;
+    padding: 8px;
+
+    
+}
+
+.form__equis{
+    display: flex;
+    align-self: flex-end;
+    background-color: red;
+    font-size: large;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.form__container{
+   
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    backdrop-filter: blur(5px);   
+}
+
+.form-none{
+    display: none;
+}
+
+h2{
+    text-align: center;
+
+}
+
+h3{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 400;
+}
+
+.btn{
+    margin-bottom: 2px;
+    cursor:pointer;
+    border-radius:5px;
+}
+
+.btn-create{
+    background-color:cadetblue;
+    font-size: 18px;
+    font-weight: 600;
+   
+}
+
+.btn-delete{
+    background-color: red;
+    
+}
+
+.btn-update{
+    background-color: cornflowerblue;
+}
+
+.bx-user-plus{
+font-size: 28px;
+cursor: pointer;
+}
+
+p{
+   font-weight: 800;
+}
+
+span{
+    font-weight: 100;
+}
+
+input{
+    height: 25px;
+    border-radius: 5px;
+    border:1px solid;
+}
